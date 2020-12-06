@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Defines a new data structure, cached matrix, that stores a matrix and its 
+## cached inverse. Computes a matrix inverse and caches it.
 
-## Write a short comment describing this function
+## Defines a new data structure, cached matrix, that stores a matrix and its 
+## cached inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -15,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
-## Write a short comment describing this function
+## Computes a matrix inverse and caches it.
 
 cacheSolve <- function(x) {
   ## Return a matrix that is the inverse of 'x'
